@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>跳到我这里来辣</title>
+  </head>
+  <body>
+    <img src="1.gif" />
+      <script>
+          function fun(){
+            var flag = confirm("小姐姐你喜欢我嘛？");
+            if(flag){
+              alert("爱你，mua~");
+            }else{
+              alert("那我等下再问一遍~");
+              fun();
+            }
+          }
+
+          fun();
+      </script>
+  </body>
+</html>
