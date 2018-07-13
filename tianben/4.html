@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>欢迎来到犇犇剧院</title>
+  </head>
+  <body>
+      <div style="text-align:center">
+          <div style="font-size:xx-large">
+            <h1>接下来<br>才<br>是<br>正<br>戏<br>!</h1>
+          </div>
+          <img src="7.jpg" />
+          <img src="8.jpg" />
+      </div>
+    </body>
+      <script>
+      var secs = 2; //倒计时的秒数
+      function Load(url){
+        for(var i=secs;i>=0;i--)
+        {
+          window.setTimeout('fun1('+i+')', (secs-i) * 1000);
+        }
+      }
+
+      function fun1(i){
+        if(i ==0)
+        window.location.href="5.html"
+      }
+
+      Load();
+      </script>
+</html>

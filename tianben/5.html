@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>欢迎来到犇犇剧院</title>
+    <style>
+      body{
+        background: black;
+      }
+    </style>
+  </head>
+  <body>
+      <div style="text-align:center">
+          <h1 style="color:white">
+            全剧终
+          </h1>
+          <img src="9.jpg" />
+          <div id="again" style="background:green;margin-top:100px;color:white;weight:50%;height:100px;font-size:xx-large;line-height:100px;" onclick="play_again()">再看一遍！</div>
+          <div id="back" style="background:red;margin-top:20px;color:white;weight:50%;height:100px;font-size:xx-large;line-height:100px;" onclick="go_back()">回去喷死这个傻X！</div>
+      </div>
+    </body>
+      <script>
+      function fun(){
+        var flag = confirm("陈雪雁小姐姐你喜欢我嘛？");
+        if(flag){
+          alert("爱你，mua~");
+        }else{
+          alert("那我等下再问一遍~");
+          fun();
+        }
+      }
+
+      fun();
+
+      function play_again(){
+        window.location.href="index.html";
+      }
+
+      function go_back(){
+        alert("嘤嘤嘤~")
+      }
+
+
+      </script>
+</html>

@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>欢迎来到犇犇剧院</title>
+  </head>
+  <body>
+      <div style="text-align:center">
+          <img src="3.jpg" />
+          <br><br><br><br><br>
+          <h1>工号<span style="color:red">0115</span>为您服务</h1>
+          <h2>可以为您提供以下服务：</h2>
+          <img src="4.gif" />
+      </div>
+    </body>
+      <script>
+      var secs = 5; //倒计时的秒数
+      function Load(url){
+        for(var i=secs;i>=0;i--)
+        {
+          window.setTimeout('fun1('+i+')', (secs-i) * 1000);
+        }
+      }
+
+      function fun1(i){
+        if(i ==0)
+        window.location.href="3.html"
+      }
+
+      Load();
+      </script>
+</html>

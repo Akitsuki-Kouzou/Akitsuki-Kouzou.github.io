@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>欢迎来到犇犇剧院</title>
+  </head>
+  <body>
+      <div style="text-align:center">
+          <img src="2.gif" />
+          <br><br><br><br><br>
+          <h1>你以为这样就结束了？</h1>
+      </div>
+    </body>
+      <script>
+      var secs = 2; //倒计时的秒数
+      function Load(url){
+        for(var i=secs;i>=0;i--)
+        {
+          window.setTimeout('fun1('+i+')', (secs-i) * 1000);
+        }
+      }
+
+      function fun1(i){
+        if(i ==0)
+        window.location.href="2.html"
+      }
+
+      Load();
+      </script>
+</html>
